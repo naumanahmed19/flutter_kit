@@ -1,31 +1,27 @@
+import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
+
+import 'Screen/HomeScreen.dart';
 
 void main() {
   runApp(MyApp());
 }
+// void main() => runApp(
+//       DevicePreview(
+//         // enabled: !kReleaseMode,
+//         builder: (context) => MyApp(),
+//       ),
+//     );
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-        visualDensity: VisualDensity.adaptivePlatformDensity,
-      ),
       home: HomeScreen(),
     );
   }
 }
-
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({Key key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: Center(child: Text('hello')),
-    );
-  }
-}
+// locale: DevicePreview.of(context).locale, // <--- /!\ Add the locale
+//     builder: DevicePreview.appBuilder, // <--- /!\ Add the builder
+//     home: HomeScreen(),
