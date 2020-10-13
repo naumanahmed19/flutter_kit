@@ -26,7 +26,7 @@ class InputRow extends StatelessWidget {
           ),
           Expanded(
               child: Padding(
-            padding: const EdgeInsets.only(bottom: 11.0),
+            padding: const EdgeInsets.only(bottom: 15.0),
             child: inputField,
           ))
         ],

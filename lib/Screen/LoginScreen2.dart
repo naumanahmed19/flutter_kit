@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
+import 'package:flutter_kit/Screen/ResetPasswordScreen.dart';
 import 'package:flutter_kit/Widgets/Common/ColorButton.dart';
 import 'package:flutter_kit/Widgets/Common/EmailField.dart';
 import 'package:flutter_kit/Widgets/Common/InputRow.dart';
@@ -71,9 +72,25 @@ class _LoginScreen2State extends State<LoginScreen2> {
                 ),
               ),
               Center(
-                child: Text(
-                  'or sign in with',
-                  style: TextStyle(fontFamily: 'Poppins'),
+                child: Column(
+                  children: [
+                    FlatButton(
+                        onPressed: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => ResetPasswordScreen()));
+                        },
+                        child: Text(
+                          'forgot password?',
+                          style: TextStyle(
+                              color: Color(0xFF565fbf), fontFamily: 'Poppins'),
+                        )),
+                    Text(
+                      'or sign in with',
+                      style: TextStyle(fontFamily: 'Poppins'),
+                    ),
+                  ],
                 ),
               ),
               SizedBox(
