@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
+import 'package:flutter_kit/Widgets/Common/BaseIconContainer.dart';
 import 'package:flutter_kit/Widgets/Common/ColorButton.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
@@ -59,20 +60,8 @@ class _PinVerifcationScreenState extends State<PinVerifcationScreen> {
                   padding: const EdgeInsets.all(8.0),
                   child: Row(
                     children: [
-                      Card(
-                        elevation: 10,
-                        child: Container(
-                          decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(25)),
-                          height: 40,
-                          width: 40,
-                          child: IconButton(
-                            icon: Icon(Icons.arrow_back_ios_rounded),
-                            onPressed: () {
-                              {}
-                            },
-                          ),
-                        ),
+                      BaseIconContainer(
+                        icon: Icon(Icons.arrow_back_ios_rounded),
                       ),
                       Spacer(),
                       FlatButton(onPressed: () {}, child: Text('Resend code?'))

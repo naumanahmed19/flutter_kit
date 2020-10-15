@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_kit/Screen/PinVerificationScreen.dart';
 import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
+import 'package:flutter_kit/Widgets/Common/BaseIconContainer.dart';
 import 'package:flutter_kit/Widgets/Common/ColorButton.dart';
 import 'package:flutter_kit/Widgets/Common/EmailField.dart';
 import 'package:flutter_kit/Widgets/Common/InputRow.dart';
@@ -22,23 +23,8 @@ class NumberResetScreen extends StatelessWidget {
             children: [
               Align(
                 alignment: Alignment.topLeft,
-                child: Padding(
-                  padding: const EdgeInsets.all(8.0),
-                  child: Card(
-                    elevation: 10,
-                    child: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(25)),
-                      height: 40,
-                      width: 40,
-                      child: IconButton(
-                        icon: Icon(Icons.arrow_back_ios_rounded),
-                        onPressed: () {
-                          {}
-                        },
-                      ),
-                    ),
-                  ),
+                child: BaseIconContainer(
+                  icon: Icon(Icons.arrow_back_ios_rounded),
                 ),
               ),
               SizedBox(height: 50),

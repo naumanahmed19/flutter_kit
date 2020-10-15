@@ -29,7 +29,11 @@ class AppTheme {
       color: Colors.black,
     ),
     primaryTextTheme: TextTheme(
-      headline1: TextStyle(color: Colors.red, fontSize: 12),
+      headline1: TextStyle(
+        color: Colors.black,
+        fontSize: 16,
+        fontFamily: 'Poppins',
+      ),
       headline3: TextStyle(
         fontSize: 14,
         fontWeight: FontWeight.w500,
@@ -49,8 +53,11 @@ class AppTheme {
     ),
     textTheme: TextTheme(
       //  bodyText1: TextStyle(color: Colors.white54, height: 1.5, fontSize: 12),
-      title:
-          TextStyle(color: Colors.black, fontSize: 12.0, fontFamily: 'Poppins'),
+      title: TextStyle(
+          color: Colors.black,
+          fontWeight: FontWeight.bold,
+          fontSize: 16.0,
+          fontFamily: 'Poppins'),
     ),
   );
 }

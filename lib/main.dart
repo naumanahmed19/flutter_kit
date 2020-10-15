@@ -1,9 +1,11 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_kit/Config/theme.dart';
+import 'package:flutter_kit/Screen/CatalogScreen.dart';
 
 import 'Config/AppRoutes.dart';
 import 'Screen/HomeScreen.dart';
+import 'Screen/tabBarClass.dart';
 
 void main() {
   runApp(MyApp());
@@ -17,7 +19,7 @@ class MyApp extends StatelessWidget {
       theme: AppTheme.lightTheme,
       routes: AppRoutes().routes(),
       debugShowCheckedModeBanner: false,
-      home: HomeScreen(),
+      home: Home(),
     );
   }
 }
