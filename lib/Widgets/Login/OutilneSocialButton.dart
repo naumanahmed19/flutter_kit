@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_kit/Screen/RegisterScreen.dart';
+import 'package:flutter_kit/Screen/Auth/RegisterScreen.dart';
 
 class OutilneSocialButton extends StatelessWidget {
   const OutilneSocialButton(

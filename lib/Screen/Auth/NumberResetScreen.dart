@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_kit/Screen/PinVerificationScreen.dart';
+import 'package:flutter_kit/Screen/Auth/PinVerificationScreen.dart';
 import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
 import 'package:flutter_kit/Widgets/Common/BaseIconContainer.dart';
-import 'package:flutter_kit/Widgets/Common/ColorButton.dart';
+import 'package:flutter_kit/Widgets/Common/BaseColorButton.dart';
 import 'package:flutter_kit/Widgets/Common/EmailField.dart';
 import 'package:flutter_kit/Widgets/Common/InputRow.dart';
 import 'package:flutter_kit/Widgets/Common/NumberField.dart';
@@ -69,7 +69,7 @@ class NumberResetScreen extends StatelessWidget {
                           child: Container(
                             height: height / 15.9,
                             width: width,
-                            child: SignInButton(
+                            child: BaseColorButton(
                               title: 'Done',
                               pressed: () {
                                 Navigator.push(

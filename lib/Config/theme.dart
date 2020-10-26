@@ -58,6 +58,11 @@ class AppTheme {
           fontWeight: FontWeight.bold,
           fontSize: 16.0,
           fontFamily: 'Poppins'),
+      subtitle: TextStyle(
+          color: Colors.black,
+          //fontWeight: FontWeight.bold,
+          fontSize: 16.0,
+          fontFamily: 'Poppins'),
     ),
   );
 }

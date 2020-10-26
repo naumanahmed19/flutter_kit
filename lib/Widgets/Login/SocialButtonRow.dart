@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_kit/Screen/LoginScreen.dart';
+import 'package:flutter_kit/Screen/Auth/LoginScreen.dart';
 
 import 'OutilneSocialButton.dart';
 

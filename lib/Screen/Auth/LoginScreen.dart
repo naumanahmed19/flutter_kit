@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_kit/Screen/LoginScreen2.dart';
+import 'package:flutter_kit/Screen/Auth/LoginScreen2.dart';
 import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
 import 'package:flutter_kit/Widgets/Common/BaseImage.dart';
-import 'package:flutter_kit/Widgets/Common/ColorButton.dart';
+import 'package:flutter_kit/Widgets/Common/BaseColorButton.dart';
 import 'package:flutter_kit/Widgets/Common/EmailField.dart';
 import 'package:flutter_kit/Widgets/Common/InputRow.dart';
 import 'package:flutter_kit/Widgets/Common/LogoWidget.dart';
@@ -81,7 +81,7 @@ class LoginScreen extends StatelessWidget {
                     child: Container(
                       height: height / 15.9,
                       width: width,
-                      child: SignInButton(
+                      child: BaseColorButton(
                         title: 'Continue',
                         pressed: () {
                           if (_formKey.currentState.validate()) {

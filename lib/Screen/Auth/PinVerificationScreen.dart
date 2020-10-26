@@ -4,7 +4,7 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
 import 'package:flutter_kit/Widgets/Common/BaseIconContainer.dart';
-import 'package:flutter_kit/Widgets/Common/ColorButton.dart';
+import 'package:flutter_kit/Widgets/Common/BaseColorButton.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 class PinVerifcationScreen extends StatefulWidget {
@@ -172,7 +172,8 @@ class _PinVerifcationScreenState extends State<PinVerifcationScreen> {
                           child: Container(
                             height: height / 15.9,
                             width: width,
-                            child: SignInButton(title: 'Done', pressed: () {}),
+                            child:
+                                BaseColorButton(title: 'Done', pressed: () {}),
                           ),
                         ),
                       ],

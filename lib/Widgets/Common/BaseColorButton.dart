@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
-class SignInButton extends StatelessWidget {
+class BaseColorButton extends StatelessWidget {
   final Function pressed;
   final String title;
-  SignInButton({this.pressed, this.title});
+  BaseColorButton({this.pressed, this.title});
 
   @override
   Widget build(BuildContext context) {

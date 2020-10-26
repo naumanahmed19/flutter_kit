@@ -16,11 +16,14 @@ class BaseImage extends StatelessWidget {
     this.overlay,
   });
 
-  _buildImage() => Image.asset(
-        imageUrl,
-        height: height,
-        width: width,
-        fit: BoxFit.cover,
+  _buildImage() => ClipRRect(
+        borderRadius: BorderRadius.circular(radius == null ? 0 : radius),
+        child: Image.asset(
+          imageUrl,
+          height: height,
+          width: width,
+          fit: BoxFit.fill,
+        ),
       );
 
   @override

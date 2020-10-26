@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_kit/Config/AppRoutes.dart';
-import 'package:flutter_kit/Screen/LoginScreen.dart';
-import 'package:flutter_kit/Widgets/Common/ColorButton.dart';
+import 'package:flutter_kit/Screen/Auth/LoginScreen.dart';
+import 'package:flutter_kit/Widgets/Common/BaseColorButton.dart';
 import 'package:flutter_kit/Widgets/Common/FlatIconButton.dart';
 import 'package:flutter_kit/Widgets/Common/LogoWidget.dart';
 
@@ -73,7 +73,7 @@ class HomeBody extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   height: height / 13.4,
                   width: width / 2.5,
-                  child: SignInButton(
+                  child: BaseColorButton(
                     title: 'Sign in',
                     pressed: () {
                       Navigator.pushNamed(context, AppRoutes.loginRoute2);

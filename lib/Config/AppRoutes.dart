@@ -8,9 +8,9 @@
  */
 
 import 'package:flutter/material.dart';
-import 'package:flutter_kit/Screen/LoginScreen.dart';
-import 'package:flutter_kit/Screen/LoginScreen2.dart';
-import 'package:flutter_kit/Screen/RegisterScreen.dart';
+import 'package:flutter_kit/Screen/Auth/LoginScreen.dart';
+import 'package:flutter_kit/Screen/Auth/LoginScreen2.dart';
+import 'package:flutter_kit/Screen/Auth/RegisterScreen.dart';
 
 class AppRoutes {
   static const loginRoute = '/loginRoute';

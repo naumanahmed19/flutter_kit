@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
 import 'package:flutter_kit/Widgets/Common/BaseImage.dart';
-import 'package:flutter_kit/Widgets/Common/ColorButton.dart';
+import 'package:flutter_kit/Widgets/Common/BaseColorButton.dart';
 import 'package:flutter_kit/Widgets/Common/EmailField.dart';
 import 'package:flutter_kit/Widgets/Common/InputRow.dart';
 import 'package:flutter_kit/Widgets/Common/NameField.dart';
@@ -129,7 +129,7 @@ class _RegisterFormState extends State<RegisterForm> {
                   child: Container(
                     height: widget.height / 16,
                     width: widget.width,
-                    child: SignInButton(
+                    child: BaseColorButton(
                       title: 'Create an account',
                       pressed: () {
                         if (widget._formKey.currentState.validate()) {

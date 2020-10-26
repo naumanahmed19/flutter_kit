@@ -31,6 +31,9 @@ dependencies:
   flutter_icons: ^1.1.0
   device_preview: ^0.4.8
   pin_code_fields: ^6.0.0
+  photo_view: ^0.10.2
+
+  
 
 
 dev_dependencies:
@@ -49,6 +52,17 @@ flutter:
   uses-material-design: true
   assets:
     - assets/
+    - assets/female/fc.jpg
+    - assets/images/4a.jpg
+    - assets/images/4a.jpg
+    - assets/images/4b.jpg
+    - assets/images/4c.jpg
+    - assets/images/2b.jpg
+    - assets/images/2c.jpg
+    - assets/images/2b.jpg
+    - assets/female/3a.jpg
+    - assets/female/3b.jpg
+    - assets/female/3c.jpg
 
   # To add assets to your application, add an assets section, like this:
   # assets:

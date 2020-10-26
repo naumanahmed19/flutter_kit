@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_kit/Screen/NumberResetScreen.dart';
+import 'package:flutter_kit/Screen/Auth/NumberResetScreen.dart';
 import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
 import 'package:flutter_kit/Widgets/Common/BaseImage.dart';
-import 'package:flutter_kit/Widgets/Common/ColorButton.dart';
+import 'package:flutter_kit/Widgets/Common/BaseColorButton.dart';
 import 'package:flutter_kit/Widgets/Common/EmailField.dart';
 import 'package:flutter_kit/Widgets/Common/InputRow.dart';
 
@@ -67,7 +67,7 @@ class ResetPasswordScreen extends StatelessWidget {
                     child: Container(
                       height: height / 15.9,
                       width: width,
-                      child: SignInButton(
+                      child: BaseColorButton(
                         title: 'Send reset link',
                         pressed: () {
                           Navigator.push(
