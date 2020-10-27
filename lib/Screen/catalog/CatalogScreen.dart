@@ -21,6 +21,8 @@ class CatalogScreen extends StatelessWidget {
             children: [
               BaseHeader(
                 title: 'Catalog',
+                icon: Icon(SimpleLineIcons.camera),
+                pressed: () {},
               ),
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 70),

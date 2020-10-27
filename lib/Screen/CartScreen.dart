@@ -19,6 +19,8 @@ class CartScreen extends StatelessWidget {
             children: [
               BaseHeader(
                 title: 'Shopping cart',
+                icon: Icon(Icons.more_horiz),
+                pressed: () {},
               ),
               Expanded(
                 child: Stack(
@@ -63,7 +65,7 @@ class CartScreen extends StatelessWidget {
                                 itemBuilder: (context, int index) {
                                   return Padding(
                                     padding: const EdgeInsets.only(
-                                        top: 30, left: 10, right: 10),
+                                        top: 10, left: 10, right: 10),
                                     child: Row(
                                       children: [
                                         BaseImage(
@@ -128,7 +130,7 @@ class CartScreen extends StatelessWidget {
                         height: 120,
                         width: width,
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
+                          mainAxisAlignment: MainAxisAlignment.start,
                           children: [
                             Container(
                               width: width / 1.2,

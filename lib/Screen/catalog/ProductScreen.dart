@@ -98,6 +98,8 @@ class ProductScreen extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: BaseHeader(
             title: 'Clothing',
+            icon: Icon(Icons.menu_open),
+            pressed: () {},
           ),
         ),
         Expanded(

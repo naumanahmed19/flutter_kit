@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_kit/Screen/CartScreen.dart';
 import 'package:flutter_kit/Widgets/Catalog/CustomRadioButton.dart';
 import 'package:flutter_kit/Widgets/Catalog/CustomRadioColorButton.dart';
@@ -135,6 +136,8 @@ class ProductDetailScreen extends StatelessWidget {
           padding: const EdgeInsets.all(8.0),
           child: BaseHeader(
             title: '',
+            icon: Icon(AntDesign.hearto),
+            pressed: () {},
           ),
         ),
       ],

@@ -4,7 +4,8 @@ class BaseIconContainer extends StatelessWidget {
   final Icon icon;
   final Color color;
   final double elevation;
-  BaseIconContainer({this.icon, this.color, this.elevation});
+  Function pressed;
+  BaseIconContainer({this.icon, this.pressed, this.color, this.elevation});
 
   @override
   Widget build(BuildContext context) {
@@ -22,12 +23,7 @@ class BaseIconContainer extends StatelessWidget {
           height: 40,
           width: 40,
           child: Center(
-            child: IconButton(
-              icon: icon,
-              onPressed: () {
-                {}
-              },
-            ),
+            child: IconButton(icon: icon, onPressed: pressed),
           ),
         ),
       ),

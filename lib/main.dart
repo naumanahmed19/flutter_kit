@@ -1,11 +1,11 @@
 import 'package:device_preview/device_preview.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_kit/Config/theme.dart';
+import 'package:flutter_kit/Config/AppTheme.dart';
 import 'package:flutter_kit/Screen/catalog/CatalogScreen.dart';
 
 import 'Config/AppRoutes.dart';
 import 'Screen/HomeScreen.dart';
-import 'Screen/tabBarClass.dart';
+import 'Screen/TabBarClass.dart';
 
 // void main() {
 //   runApp(MyApp());
