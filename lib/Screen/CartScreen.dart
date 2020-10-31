@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kit/Screen/OrderScreen.dart';
 import 'package:flutter_kit/Widgets/Common/BaseColorButton.dart';
 import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
 import 'package:flutter_kit/Widgets/Common/BaseHeader.dart';
@@ -134,9 +135,18 @@ class CartScreen extends StatelessWidget {
                           children: [
                             Container(
                               width: width / 1.2,
-                              child: BaseColorButton(
-                                title: 'Go to check out',
-                                pressed: () {},
+                              child: Padding(
+                                padding: const EdgeInsets.all(8.0),
+                                child: BaseColorButton(
+                                  title: 'Go to check out',
+                                  pressed: () {
+                                    Navigator.push(
+                                        context,
+                                        MaterialPageRoute(
+                                            builder: (context) =>
+                                                OrderScreen()));
+                                  },
+                                ),
                               ),
                             ),
                           ],

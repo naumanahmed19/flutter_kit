@@ -16,9 +16,9 @@ class LoginScreen2 extends StatefulWidget {
 }
 
 class _LoginScreen2State extends State<LoginScreen2> {
+  GlobalKey<FormState> _formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(

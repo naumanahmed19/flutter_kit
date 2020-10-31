@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
-import 'package:flutter_kit/Screen/Auth/LoginScreen2.dart';
 import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
 import 'package:flutter_kit/Widgets/Common/BaseImage.dart';
 import 'package:flutter_kit/Widgets/Common/BaseColorButton.dart';
@@ -8,18 +7,12 @@ import 'package:flutter_kit/Widgets/Common/EmailField.dart';
 import 'package:flutter_kit/Widgets/Common/InputRow.dart';
 import 'package:flutter_kit/Widgets/Common/LogoWidget.dart';
 import 'package:flutter_kit/Widgets/Common/PasswordField.dart';
-import 'package:flutter_kit/Widgets/Login/OutilneSocialButton.dart';
 import 'package:flutter_kit/Widgets/Login/SocialButtonRow.dart';
 
-import 'RegisterScreen.dart';
-
 class LoginScreen extends StatelessWidget {
-  const LoginScreen({Key key}) : super(key: key);
-
+  GlobalKey<FormState> formKey = GlobalKey<FormState>();
   @override
   Widget build(BuildContext context) {
-    final GlobalKey<FormState> _formKey = GlobalKey<FormState>();
-    var passKey = GlobalKey<FormFieldState>();
     var height = MediaQuery.of(context).size.height;
     var width = MediaQuery.of(context).size.width;
     return Scaffold(
@@ -35,7 +28,7 @@ class LoginScreen extends StatelessWidget {
           width: width,
           child: SingleChildScrollView(
             child: Form(
-              key: _formKey,
+              //  key: _formKey,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -84,9 +77,9 @@ class LoginScreen extends StatelessWidget {
                       child: BaseColorButton(
                         title: 'Continue',
                         pressed: () {
-                          if (_formKey.currentState.validate()) {
-                            print('ok');
-                          }
+                          // if (_formKey.currentState.validate()) {
+                          //   print('ok');
+                          // }
                         },
                       ),
                     ),
