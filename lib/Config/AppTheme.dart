@@ -4,6 +4,7 @@ import 'package:flutter_kit/Config/AppColors.dart';
 class AppTheme {
   AppTheme._();
 
+  
   static final ThemeData lightTheme = ThemeData(
     primaryColor: primary,
     scaffoldBackgroundColor: Color(0xffecf0f5),
@@ -56,11 +57,6 @@ class AppTheme {
       title: TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.bold,
-          fontSize: 16.0,
-          fontFamily: 'Poppins'),
-      subtitle: TextStyle(
-          color: Colors.black,
-          //fontWeight: FontWeight.bold,
           fontSize: 16.0,
           fontFamily: 'Poppins'),
     ),

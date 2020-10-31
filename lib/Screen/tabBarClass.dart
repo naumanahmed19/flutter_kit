@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_kit/Screen/CartScreen.dart';
+import 'package:flutter_kit/Screen/PaymentScreen.dart';
 import 'package:flutter_kit/Screen/catalog/CatalogScreen.dart';
+import 'package:flutter_kit/Screen/catalog/ProductScreen.dart';
 
 import 'HomeScreen.dart';
 
@@ -81,10 +83,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                   child: TabBarView(
                     controller: tabController,
                     children: <Widget>[
-                      CatalogScreen(),
+                      ProductScreen(),
                       CatalogScreen(),
                       CartScreen(),
-                      CatalogScreen(),
+                      PaymentScreen(),
                       HomeScreen(),
                     ],
                   ),
