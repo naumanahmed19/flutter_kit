@@ -3,10 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_kit/Screen/CartScreen.dart';
 import 'package:flutter_kit/Screen/PaymentScreen.dart';
+import 'package:flutter_kit/Screen/SelectTopicsScreen.dart';
 import 'package:flutter_kit/Screen/catalog/CatalogScreen.dart';
 import 'package:flutter_kit/Screen/catalog/ProductScreen.dart';
 
 import 'HomeScreen.dart';
+import 'SelectChannelScreen.dart';
 
 class Home extends StatefulWidget {
   Home({Key key, this.title}) : super(key: key);
@@ -86,7 +88,7 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       ProductScreen(),
                       CatalogScreen(),
                       CartScreen(),
-                      PaymentScreen(),
+                      SelectChannelScreen(),
                       HomeScreen(),
                     ],
                   ),

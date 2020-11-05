@@ -9,7 +9,7 @@ mixin BaseMixins {
     var height = MediaQuery.of(context).size.height;
     if (width > 500) {
       return isTablet;
-    } else if (width < 370) {
+    } else if (width < 330) {
       return isSmallPhone;
     } else
       return isPhone;

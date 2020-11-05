@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_kit/Config/Validation_rules.dart';
 
 class NameField extends StatefulWidget {
-  const NameField({
-    Key key,
-  }) : super(key: key);
+  final String lable;
+
+  NameField({this.lable});
 
   @override
   _NameFieldState createState() => _NameFieldState();
@@ -37,7 +37,7 @@ class _NameFieldState extends State<NameField> {
         decoration: InputDecoration(
           labelStyle: TextStyle(fontWeight: FontWeight.bold),
           suffixIcon: getIcon(),
-          labelText: 'Full Name',
+          labelText: widget.lable == null ? 'Full Name' : widget.lable,
         ));
   }
 }

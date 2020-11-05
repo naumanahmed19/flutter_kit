@@ -4,10 +4,11 @@ import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
 import 'package:flutter_kit/Widgets/Common/BaseDropDown.dart';
 import 'package:flutter_kit/Widgets/Common/BaseHeader.dart';
 import 'package:flutter_kit/Widgets/Common/BaseImage.dart';
+import 'package:flutter_kit/mixins/BaseMixins.dart';
 import 'package:flutter_kit/model/ProductImages.dart';
 import 'package:flutter_kit/model/ProductModel.dart';
 
-class ProductScreen extends StatelessWidget {
+class ProductScreen extends StatelessWidget with BaseMixins {
   final ScrollController scrollController = new ScrollController();
   final List<ProductModel> items = <ProductModel>[
     ProductModel(
@@ -127,8 +128,10 @@ class ProductScreen extends StatelessWidget {
                     controller: scrollController,
                     itemCount: items.length,
                     gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      childAspectRatio: 0.63,
-                      crossAxisCount: 2,
+                      childAspectRatio: responsive(context,
+                          isPhone: 0.65, isSmallPhone: 0.57, isTablet: 0.73),
+                      crossAxisCount: responsive(context,
+                          isPhone: 2, isSmallPhone: 2, isTablet: 3),
                     ),
                     itemBuilder: (context, index) {
                       print(items[index].title);

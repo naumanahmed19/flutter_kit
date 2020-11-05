@@ -3,6 +3,8 @@ import 'package:flutter_icons/flutter_icons.dart';
 import 'package:flutter_kit/Config/Validation_rules.dart';
 
 class PasswordField extends StatefulWidget {
+  final String lable;
+  PasswordField({this.lable});
   @override
   _PasswordFieldState createState() => _PasswordFieldState();
 }
@@ -29,7 +31,7 @@ class _PasswordFieldState extends State<PasswordField> {
               color: Color(0xFF565fbf),
             ),
           ),
-          labelText: 'Password',
+          labelText: widget.lable == null ? 'Password' : widget.lable,
         ));
   }
 }

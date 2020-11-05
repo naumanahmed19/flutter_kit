@@ -1,11 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kit/Widgets/Catalog/CustomPaymentCard.dart';
+import 'package:flutter_kit/Widgets/Common/BaseContainer.dart';
 import 'package:flutter_kit/Widgets/Common/BaseHeader.dart';
+import 'package:flutter_kit/Widgets/Common/MultipleContainer.dart';
+import 'package:flutter_kit/Widgets/Common/PasswordField.dart';
 
-class PaymentScreen extends StatelessWidget {
-  const PaymentScreen({Key key}) : super(key: key);
+class PaymentScreen extends StatefulWidget {
+  @override
+  _PaymentScreenState createState() => _PaymentScreenState();
+}
 
+class _PaymentScreenState extends State<PaymentScreen> {
   @override
   Widget build(BuildContext context) {
+    var height = MediaQuery.of(context).size.height;
+    var width = MediaQuery.of(context).size.width;
     return Scaffold(
       body: Column(
         children: [
@@ -38,6 +47,26 @@ class PaymentScreen extends StatelessWidget {
               ),
             ),
           ),
+          Expanded(
+            child: BaseContainer(
+              child: Column(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                        height: 120, width: width, child: CustomPaymentCard()),
+                  ),
+                  Form(
+                    child: Column(
+                      children: [
+                        PasswordField(),
+                      ],
+                    ),
+                  )
+                ],
+              ),
+            ),
+          )
         ],
       ),
     );
